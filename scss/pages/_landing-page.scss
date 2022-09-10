@@ -1,0 +1,67 @@
+body {
+}
+
+.landing-page {
+    &__header {
+        background-color: var(--cor-principal);
+
+        border-bottom-left-radius: 15px;
+        height: 85vh;
+        &__menu-fixo {
+            @include flex-container(row, space-between, center);
+            &__carrossel {
+                &__simbolo-mais {
+    
+                }
+    
+                &__informacao {
+    
+                }
+            }
+    
+            &__botao {
+                background-color: var(--cor-secundaria);
+            }
+        }
+
+        &__conteudo {
+            &__informacoes {
+                &__autor {
+                    &__linha {
+
+                    }
+
+                    &__nome {
+
+                    }
+                }
+
+                &__informacoes-principais {
+                    &__titulo {
+
+                    }
+
+                    &__descricao {
+
+                    }
+                }
+
+                &__formulario {
+                    &__inputs {
+                        &__input {
+
+                        }
+
+                        &__botao {
+
+                        }
+                    }
+                }
+            }
+
+            &__imagem {
+
+            }
+        }
+    }
+}

@@ -1,0 +1,43 @@
+html {
+   // COR
+   --cor-principal: #00050f;
+   --cor-secundaria: #00FFA8;
+   --cor-terciaria: #006FFF;
+   --cor-fundo: #F3F3F3;
+
+   // SCREEN 
+      // HEIGHT
+      // --min-height: ;
+      // --max-height: ;
+   
+      // WIDTH
+      // --min-width: ;
+      // --max-width: ;
+
+   // TRANSITION
+   --transition-1: .2s ease;
+   
+   // BREAKPOINT
+      // WIDTH
+      --breakpoint-width-1: 1600px;
+
+   // TEXTO
+   --tamanho-text-comum: 1.7rem;
+   --tamanho-text-importante: 4rem;
+
+   
+   @media only screen and (max-width: --breakpoint-width-1) {
+      --tamanho-text-comum: 1.4rem;
+      --tamanho-text-importante: 3rem;
+   }
+
+   // @media only screen and (max-width: 1350px) {
+   //    --tamanho-text-comum: 1.4rem;
+   // }
+
+   // @media only screen and (max-width: 550px) {
+   //    --tamanho-text-comum: 1.8rem;
+   // }
+
+   // OUTROS
+}
