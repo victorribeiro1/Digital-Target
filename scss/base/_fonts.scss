@@ -1,10 +1,15 @@
 // Lato
 @font-face {
-    src: url("../midias/fontes/lato/Lato-Regular.woff");
+    src: url("../../midias/fontes/lato/Lato-Light.woff");
+    font-family: 'Lato Light'
+}
+
+@font-face {
+    src: url("../../midias/fontes/lato/Lato-Regular.woff");
     font-family: 'Lato Regular'
 }
 
 @font-face {
-    src: url("../midias/fontes/lato/Lato-Semibold.woff");
-    font-family: 'Lato Semibold'
+    src: url("../../midias/fontes/lato/Lato-Bold.woff");
+    font-family: 'Lato Bold'
 }

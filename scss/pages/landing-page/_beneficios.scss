@@ -1,0 +1,118 @@
+.landing-page {
+    &__beneficios {
+        @include flex-container(column, flex-start, center);
+
+        padding: 0 var(--distancia-horizontal);
+
+        &__cards {
+            @include flex-container(row, space-between, flex-start, wrap);
+
+            width: 100%;
+    
+            &__card {
+                cursor: pointer;
+
+                border-radius: 10px;
+                
+                height: 15rem;
+                width: calc(50% - 10px);
+
+                overflow: hidden;
+
+                position: relative;
+                
+                &:nth-of-type(1),
+                &:nth-of-type(2) {
+                    margin-bottom: 20px;
+                }
+
+                &:hover &{
+                    &__frente {
+                        opacity: 0
+                    }
+                }
+                
+                &__frente {
+                    @include flex-container(row, flex-start, center);
+
+                    background-color: var(--cor-principal);
+
+                    color: var(--cor-fundo);
+
+                    opacity: 1;
+
+                    padding: 0 20px;
+                    position: absolute;
+
+                    height: 100%;
+                    width: 100%;
+
+                    z-index: 1;
+
+                    transition: .2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+                    &__container-icone {
+                        border: 1px solid var(--cor-terciaria);
+                        border-radius: 999px;
+
+                        padding: 20px;
+                        margin-right: 30px;
+
+                        &__icone {
+                            height: 3rem;
+                            width: 3rem;
+    
+                            fill: var(--cor-secundaria);
+    
+                            position: relative;
+    
+                            display: block;
+                        }
+                    }
+    
+                    &__informacoes {
+                        &__titulo {
+                            font-size: 2.5rem;
+
+                            display: block;
+
+                            margin-bottom: 10px;
+                        }
+    
+                        &__descricao {
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+
+                &__verso {
+                    background-color: var(--cor-terciaria);
+                    height: 100%;
+                    width: 100%;
+
+                    position: absolute;
+
+                    @include flex-container;
+
+                    &__titulo {
+                        color: var(--cor-fundo);
+
+                        position: absolute;
+
+                        top:  20px;
+                        left: 20px;
+
+                        font-size: 2rem;
+                    }
+    
+                    &__aumentar-vendas {
+                        color: var(--cor-principal);
+                        font-family: "Lato Bold";
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
