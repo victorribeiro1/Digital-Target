@@ -26,13 +26,10 @@
 
         flex: none;
 
-        height: 10%;
-        width: calc(100% + var(--distancia-horizontal));
-
-        padding: 0 var(--distancia-horizontal);
+        height: calc(var(--distancia-vertical) * 1.5);
+        width: calc(100% - var(--distancia-horizontal) * 2);
 
         position: fixed;
-        left: calc(-1 * (var(--distancia-horizontal) / 2));
 
         transform: translateY(0%);
         transition: 
@@ -133,9 +130,13 @@
             }
 
             &__informacoes-principais {
+                margin-bottom: 80px;
+                
                 width: 56%;
 
-                margin-bottom: 80px;
+                @media only screen and (max-width: 1350px) {
+                    width: 40%;
+                }
 
                 &__titulo {
                     font-size: 9rem;
@@ -245,5 +246,52 @@
             }
         }
         
+    }
+
+    @media only screen and (max-width: 1150px) {
+        height: 90vh;
+
+        &__conteudo {
+            @include flex-container(column, flex-start, center);
+
+            margin-top: calc(var(--distancia-horizontal) + (var(--distancia-vertical) * 1.5));
+
+            &__informacoes {
+
+                &__informacoes-principais {
+                    width: 100%;
+
+                    margin-bottom: 45px;
+
+                    &__titulo {
+                        @media only screen and (max-width: 730px) {
+                            font-size: 7rem;
+                        }
+
+                        @media only screen and (max-width: 600px) {
+                            font-size: 6rem;
+                        }
+                       
+                        @media only screen and (max-width: 550px) {
+                            font-size: 5.5rem;
+                        }
+
+                    }
+                }
+
+                &__formulario {
+                    width: 100%;
+                }
+            }
+
+            &__container-imagem {
+                position: absolute;
+                right: unset;
+
+                &__imagem {
+                    width: 50rem;
+                }
+            }
+        }
     }
 }

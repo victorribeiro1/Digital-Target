@@ -16,6 +16,11 @@ html {
     --tamanho-text-importante: 3rem;
   }
 }
+@media only screen and (max-width: 1150px) {
+  html {
+    --distancia-horizontal: 30px;
+  }
+}
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
@@ -480,11 +485,9 @@ h2 {
   flex-wrap: nowrap;
   background-color: var(--cor-principal);
   flex: none;
-  height: 10%;
-  width: calc(100% + var(--distancia-horizontal));
-  padding: 0 var(--distancia-horizontal);
+  height: calc(var(--distancia-vertical) * 1.5);
+  width: calc(100% - var(--distancia-horizontal) * 2);
   position: fixed;
-  left: calc(-1 * var(--distancia-horizontal) / 2);
   transform: translateY(0%);
   transition: transform var(--transition-1), opacity var(--transition-1);
   z-index: 100;
@@ -563,8 +566,13 @@ h2 {
   font-size: 2rem;
 }
 .header__conteudo__informacoes__informacoes-principais {
-  width: 56%;
   margin-bottom: 80px;
+  width: 56%;
+}
+@media only screen and (max-width: 1350px) {
+  .header__conteudo__informacoes__informacoes-principais {
+    width: 40%;
+  }
 }
 .header__conteudo__informacoes__informacoes-principais__titulo {
   font-size: 9rem;
@@ -658,6 +666,52 @@ h2 {
   transform: translate(-50%, -50%);
   background-color: rgba(20, 31, 52, 0.6392156863);
   filter: blur(90px);
+}
+@media only screen and (max-width: 1150px) {
+  .header {
+    height: 90vh;
+  }
+  .header__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    margin-top: calc(var(--distancia-horizontal) + var(--distancia-vertical) * 1.5);
+  }
+  .header__conteudo__informacoes__informacoes-principais {
+    width: 100%;
+    margin-bottom: 45px;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 730px) {
+  .header__conteudo__informacoes__informacoes-principais__titulo {
+    font-size: 7rem;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 600px) {
+  .header__conteudo__informacoes__informacoes-principais__titulo {
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 550px) {
+  .header__conteudo__informacoes__informacoes-principais__titulo {
+    font-size: 5.5rem;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .header__conteudo__informacoes__formulario {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .header__conteudo__container-imagem {
+    position: absolute;
+    right: unset;
+  }
+  .header__conteudo__container-imagem__imagem {
+    width: 50rem;
+  }
 }
 
 .beneficios {

@@ -42,4 +42,9 @@ html {
    // OUTROS
    --distancia-horizontal: 100px;
    --distancia-vertical: 50px;
+
+   @media only screen and (max-width: 1150px) {
+      --distancia-horizontal: 30px;
+   }
+
 }

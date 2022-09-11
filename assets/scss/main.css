@@ -16,6 +16,11 @@ html {
     --tamanho-text-importante: 3rem;
   }
 }
+@media only screen and (max-width: 1150px) {
+  html {
+    --distancia-horizontal: 30px;
+  }
+}
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
