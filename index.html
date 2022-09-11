@@ -7,159 +7,279 @@
         <title>Landing Page</title>
 
         <!-- <link rel="stylesheet" href="style.css"> -->
-        <link rel="stylesheet" href="./scss/main.css">
+        <link rel="stylesheet" href="./assets/scss/landing-page.css">
     </head>
     <body>
         <div class="landing-page">
-            <div class="landing-page__header">
-                <div class="landing-page__header__menu-fixo">
-                    <div class="landing-page__header__menu-fixo__carrossel">
-                        <span class="landing-page__header__menu-fixo__carrossel__simbolo-mais">+</span>
-                        <span id="corrosselInformacoes" class="landing-page__header__menu-fixo__carrossel__informacao">clientes</span>
+            <header class="header">
+                <div id="menu" class="header__menu-fixo">
+                    <div class="header__menu-fixo__carrossel">
+                        <span class="header__menu-fixo__carrossel__simbolo-mais">+</span>
+                        <span id="corrosselInformacoes" class="header__menu-fixo__carrossel__informacao">clientes</span>
                     </div>
-                    <div class="landing-page__header__menu-fixo__botao">Aumentar vendas!</div>
+                    <a href="#formulario" class="header__menu-fixo__botao">Aumentar vendas!</a>
                 </div>
 
-                <div class="landing-page__header__conteudo">
-                    <div class="landing-page__header__conteudo__informacoes">
-                        <div class="landing-page__header__conteudo__informacoes__autor">
-                            <div class="landing-page__header__conteudo__informacoes__autor__linha"></div>
-                            <span class="landing-page__header__conteudo__informacoes__autor__nome">Tom Luis</span>
+                <div class="header__conteudo">
+                    <div class="header__conteudo__informacoes">
+                        <div class="header__conteudo__informacoes__autor">
+                            <div class="header__conteudo__informacoes__autor__linha"></div>
+                            <span class="header__conteudo__informacoes__autor__nome">Tom Luis</span>
                         </div>
 
-                        <div class="landing-page__header__conteudo__informacoes__informacoes-principais">
-                            <h1 class="landing-page__header__conteudo__informacoes__informacoes-principais__titulo">Potencialize o número de vendas</h1>
-                            <p class="landing-page__header__conteudo__informacoes__informacoes-principais__descricao">Especialista em anúncios pagos e estratégias digitais para empresas. Vou ajudar na atração de clientes para o seu negócio.</p>
+                        <div class="header__conteudo__informacoes__informacoes-principais">
+                            <h1 class="header__conteudo__informacoes__informacoes-principais__titulo">Potencialize o número de vendas</h1>
+                            <p class="header__conteudo__informacoes__informacoes-principais__descricao">Especialista em anúncios pagos e estratégias digitais para empresas. Vou ajudar na atração de clientes para o seu negócio.</p>
                         </div>
 
-                        <form action="formulario.php" method="post" class="landing-page__header__conteudo__informacoes__formulario">
-                            <div class="landing-page__header__conteudo__informacoes__formulario__inputs">
-                                <input type="text"  name="nome"     placeholder="Nome Completo" class="landing-page__header__conteudo__informacoes__formulario__inputs__input">
-                                <input type="email" name="email"    placeholder="Email"         class="landing-page__header__conteudo__informacoes__formulario__inputs__input">
-                                <input type="text"  name="numero"   placeholder="Numero"        class="landing-page__header__conteudo__informacoes__formulario__inputs__input">
+                        <form action="formulario.php" method="post" class="header__conteudo__informacoes__formulario">
+                            <div class="header__conteudo__informacoes__formulario__inputs">
+                                <input type="text"  name="nome"     placeholder="Nome Completo" class="header__conteudo__informacoes__formulario__inputs__input">
+                                <input type="email" name="email"    placeholder="Email"         class="header__conteudo__informacoes__formulario__inputs__input">
+                                <input type="text"  name="numero"   placeholder="Numero"        class="header__conteudo__informacoes__formulario__inputs__input">
                             </div>
-                            <input type="submit" value="Aumentar vendas!" class="landing-page__header__conteudo__informacoes__formulario__botao">
+                            <input type="submit" value="Aumentar vendas!" class="header__conteudo__informacoes__formulario__botao">
                         </form>
                     </div>
 
-                    <div class="landing-page__header__conteudo__container-imagem">
-                        <img src="midias/imagens/foto-principal.png" class="landing-page__header__conteudo__container-imagem__imagem">
-                        <div class="landing-page__header__conteudo__container-imagem__luz"></div>
+                    <div class="header__conteudo__container-imagem">
+                        <img src="/assets/midias/imagens/foto-principal.png" class="header__conteudo__container-imagem__imagem">
+                        <div class="header__conteudo__container-imagem__luz"></div>
                     </div>
                 </div>
-            </div>
+            </header>
 
-            <section class="landing-page__beneficios">
-                <h2 class="landing-page__beneficios__titulo">Se você quiser...</h2>
-                <div class="landing-page__beneficios__cards">
-                    <a href="#aumentar-vendas" class="landing-page__beneficios__cards__card">
-                        <div class="landing-page__beneficios__cards__card__frente">
-                            <div class="landing-page__beneficios__cards__card__frente__container-icone">
-                                <svg class="landing-page__beneficios__cards__card__frente__container-icone__icone">
-                                    <use xlink:href="midias/icones/lattes.svg#lattes"></use>
+            <section class="beneficios">
+                <h2 class="beneficios__titulo">Se você quiser...</h2>
+                <div class="beneficios__cards">
+                    <a href="#aumentar-vendas" class="beneficios__cards__card">
+                        <div class="beneficios__cards__card__frente">
+                            <div class="beneficios__cards__card__frente__container-icone">
+                                <svg class="beneficios__cards__card__frente__container-icone__icone">
+                                    <use xlink:href="/assets/midias/icones/lattes.svg#lattes"></use>
                                 </svg>
                             </div>
-                            <div class="landing-page__beneficios__cards__card__frente__informacoes">
-                                <span class="landing-page__beneficios__cards__card__frente__informacoes__titulo">Reconhecimento da marca</span>
-                                <p class="landing-page__beneficios__cards__card__frente__informacoes__descricao">Não está satisfeito com o atual número de clientes? Neste evento, você vai conhecer o passo a passo da “panfletagem digital”.</p>
+                            <div class="beneficios__cards__card__frente__informacoes">
+                                <span class="beneficios__cards__card__frente__informacoes__titulo">Reconhecimento da marca</span>
+                                <p class="beneficios__cards__card__frente__informacoes__descricao">Não está satisfeito com o atual número de clientes? Neste evento, você vai conhecer o passo a passo da “panfletagem digital”.</p>
                             </div>
                         </div>
-                        <div href="#aumentar-vendas" class="landing-page__beneficios__cards__card__verso">
-                            <span class="landing-page__beneficios__cards__card__verso__titulo">Reconhecimento de marca</span>
-                            <div class="landing-page__beneficios__cards__card__verso__aumentar-vendas">Aumentar Vendas!</div>
+                        <div href="#aumentar-vendas" class="beneficios__cards__card__verso">
+                            <span class="beneficios__cards__card__verso__titulo">Reconhecimento de marca</span>
+                            <div class="beneficios__cards__card__verso__aumentar-vendas">Aumentar Vendas!</div>
                         </div>
                     </a>
-                    <a href="#aumentar-vendas" class="landing-page__beneficios__cards__card">
-                        <div class="landing-page__beneficios__cards__card__frente">
-                            <div class="landing-page__beneficios__cards__card__frente__container-icone">
-                                <svg class="landing-page__beneficios__cards__card__frente__container-icone__icone">
-                                    <use xlink:href="midias/icones/lattes.svg#lattes"></use>
+                    <a href="#aumentar-vendas" class="beneficios__cards__card">
+                        <div class="beneficios__cards__card__frente">
+                            <div class="beneficios__cards__card__frente__container-icone">
+                                <svg class="beneficios__cards__card__frente__container-icone__icone">
+                                    <use xlink:href="/assets/midias/icones/lattes.svg#lattes"></use>
                                 </svg>
                             </div>
-                            <div class="landing-page__beneficios__cards__card__frente__informacoes">
-                                <span class="landing-page__beneficios__cards__card__frente__informacoes__titulo">Reconhecimento da marca</span>
-                                <p class="landing-page__beneficios__cards__card__frente__informacoes__descricao">Não está satisfeito com o atual número de clientes? Neste evento, você vai conhecer o passo a passo da “panfletagem digital”.</p>
+                            <div class="beneficios__cards__card__frente__informacoes">
+                                <span class="beneficios__cards__card__frente__informacoes__titulo">Reconhecimento da marca</span>
+                                <p class="beneficios__cards__card__frente__informacoes__descricao">Não está satisfeito com o atual número de clientes? Neste evento, você vai conhecer o passo a passo da “panfletagem digital”.</p>
                             </div>
                         </div>
-                        <div href="#aumentar-vendas" class="landing-page__beneficios__cards__card__verso">
-                            <span class="landing-page__beneficios__cards__card__verso__titulo">Reconhecimento de marca</span>
-                            <div class="landing-page__beneficios__cards__card__verso__aumentar-vendas">Aumentar Vendas!</div>
+                        <div href="#aumentar-vendas" class="beneficios__cards__card__verso">
+                            <span class="beneficios__cards__card__verso__titulo">Reconhecimento de marca</span>
+                            <div class="beneficios__cards__card__verso__aumentar-vendas">Aumentar Vendas!</div>
                         </div>
                     </a>
-                    <a href="#aumentar-vendas" class="landing-page__beneficios__cards__card">
-                        <div class="landing-page__beneficios__cards__card__frente">
-                            <div class="landing-page__beneficios__cards__card__frente__container-icone">
-                                <svg class="landing-page__beneficios__cards__card__frente__container-icone__icone">
-                                    <use xlink:href="midias/icones/lattes.svg#lattes"></use>
+                    <a href="#aumentar-vendas" class="beneficios__cards__card">
+                        <div class="beneficios__cards__card__frente">
+                            <div class="beneficios__cards__card__frente__container-icone">
+                                <svg class="beneficios__cards__card__frente__container-icone__icone">
+                                    <use xlink:href="/assets/midias/icones/lattes.svg#lattes"></use>
                                 </svg>
                             </div>
-                            <div class="landing-page__beneficios__cards__card__frente__informacoes">
-                                <span class="landing-page__beneficios__cards__card__frente__informacoes__titulo">Reconhecimento da marca</span>
-                                <p class="landing-page__beneficios__cards__card__frente__informacoes__descricao">Não está satisfeito com o atual número de clientes? Neste evento, você vai conhecer o passo a passo da “panfletagem digital”.</p>
+                            <div class="beneficios__cards__card__frente__informacoes">
+                                <span class="beneficios__cards__card__frente__informacoes__titulo">Reconhecimento da marca</span>
+                                <p class="beneficios__cards__card__frente__informacoes__descricao">Não está satisfeito com o atual número de clientes? Neste evento, você vai conhecer o passo a passo da “panfletagem digital”.</p>
                             </div>
                         </div>
-                        <div href="#aumentar-vendas" class="landing-page__beneficios__cards__card__verso">
-                            <span class="landing-page__beneficios__cards__card__verso__titulo">Reconhecimento de marca</span>
-                            <div class="landing-page__beneficios__cards__card__verso__aumentar-vendas">Aumentar Vendas!</div>
+                        <div href="#aumentar-vendas" class="beneficios__cards__card__verso">
+                            <span class="beneficios__cards__card__verso__titulo">Reconhecimento de marca</span>
+                            <div class="beneficios__cards__card__verso__aumentar-vendas">Aumentar Vendas!</div>
                         </div>
                     </a>
-                    <a href="#aumentar-vendas" class="landing-page__beneficios__cards__card">
-                        <div class="landing-page__beneficios__cards__card__frente">
-                            <div class="landing-page__beneficios__cards__card__frente__container-icone">
-                                <svg class="landing-page__beneficios__cards__card__frente__container-icone__icone">
-                                    <use xlink:href="midias/icones/lattes.svg#lattes"></use>
+                    <a href="#aumentar-vendas" class="beneficios__cards__card">
+                        <div class="beneficios__cards__card__frente">
+                            <div class="beneficios__cards__card__frente__container-icone">
+                                <svg class="beneficios__cards__card__frente__container-icone__icone">
+                                    <use xlink:href="/assets/midias/icones/lattes.svg#lattes"></use>
                                 </svg>
                             </div>
-                            <div class="landing-page__beneficios__cards__card__frente__informacoes">
-                                <span class="landing-page__beneficios__cards__card__frente__informacoes__titulo">Reconhecimento da marca</span>
-                                <p class="landing-page__beneficios__cards__card__frente__informacoes__descricao">Não está satisfeito com o atual número de clientes? Neste evento, você vai conhecer o passo a passo da “panfletagem digital”.</p>
+                            <div class="beneficios__cards__card__frente__informacoes">
+                                <span class="beneficios__cards__card__frente__informacoes__titulo">Reconhecimento da marca</span>
+                                <p class="beneficios__cards__card__frente__informacoes__descricao">Não está satisfeito com o atual número de clientes? Neste evento, você vai conhecer o passo a passo da “panfletagem digital”.</p>
                             </div>
                         </div>
-                        <div href="#aumentar-vendas" class="landing-page__beneficios__cards__card__verso">
-                            <span class="landing-page__beneficios__cards__card__verso__titulo">Reconhecimento de marca</span>
-                            <div class="landing-page__beneficios__cards__card__verso__aumentar-vendas">Aumentar Vendas!</div>
+                        <div href="#aumentar-vendas" class="beneficios__cards__card__verso">
+                            <span class="beneficios__cards__card__verso__titulo">Reconhecimento de marca</span>
+                            <div class="beneficios__cards__card__verso__aumentar-vendas">Aumentar Vendas!</div>
                         </div>
                     </a>
                 </div>
             </section>
 
-            <section class="landing-page__apontamentos">
-                <div class="landing-page__apontamentos__conteudo">
-                    <h2 class="landing-page__apontamentos__conteudo__titulo">Descubra se Anúncios e Estratégias Digitais São Para o Seu Negócio</h2>
+            <section class="apontamentos">
+                <div class="apontamentos__conteudo">
+                    <h2 class="apontamentos__conteudo__titulo">Descubra se Anúncios e Estratégias Digitais São Para o Seu Negócio</h2>
 
-                    <div class="landing-page__apontamentos__conteudo__cards">
-                        <div class="landing-page__apontamentos__conteudo__cards__card">
-                            <div class="landing-page__apontamentos__conteudo__cards__card__container-numero">
-                                <span class="landing-page__apontamentos__conteudo__cards__card__container-numero__numero">01</span>
+                    <div class="apontamentos__conteudo__cards">
+                        <div class="apontamentos__conteudo__cards__card">
+                            <div class="apontamentos__conteudo__cards__card__container-numero">
+                                <span class="apontamentos__conteudo__cards__card__container-numero__numero">01</span>
                             </div>
-                            <p class="landing-page__apontamentos__conteudo__cards__card__descricao">Não importa o segmento da sua empresa, com os anúncios patrocinados e estratégias digitais você entra no SELETO GRUPO dos negócios que seu posicionam na internet da maneira correta</p>
+                            <p class="apontamentos__conteudo__cards__card__descricao">Não importa o segmento da sua empresa, com os anúncios patrocinados e estratégias digitais você entra no SELETO GRUPO dos negócios que seu posicionam na internet da maneira correta</p>
                         </div>
-                        <div class="landing-page__apontamentos__conteudo__cards__card">
-                            <div class="landing-page__apontamentos__conteudo__cards__card__container-numero">
-                                <span class="landing-page__apontamentos__conteudo__cards__card__container-numero__numero">02</span>
+                        <div class="apontamentos__conteudo__cards__card">
+                            <div class="apontamentos__conteudo__cards__card__container-numero">
+                                <span class="apontamentos__conteudo__cards__card__container-numero__numero">02</span>
                             </div>
-                            <p class="landing-page__apontamentos__conteudo__cards__card__descricao">Além de contar com o profissionalismo, você poderá contar também com anúncios nas mais CONCEITUADAS PLATAFORMAS DIGITAIS e com os melhores e mais específicos objetivos de campanhas.</p>
+                            <p class="apontamentos__conteudo__cards__card__descricao">Além de contar com o profissionalismo, você poderá contar também com anúncios nas mais CONCEITUADAS PLATAFORMAS DIGITAIS e com os melhores e mais específicos objetivos de campanhas.</p>
                         </div>
-                        <div class="landing-page__apontamentos__conteudo__cards__card">
-                            <div class="landing-page__apontamentos__conteudo__cards__card__container-numero">
-                                <span class="landing-page__apontamentos__conteudo__cards__card__container-numero__numero landing-page__apontamentos__conteudo__cards__card__container-numero__numero--exclamacao">!</span>
+                        <div class="apontamentos__conteudo__cards__card">
+                            <div class="apontamentos__conteudo__cards__card__container-numero">
+                                <span class="apontamentos__conteudo__cards__card__container-numero__numero apontamentos__conteudo__cards__card__container-numero__numero--exclamacao">!</span>
                             </div>
-                            <p class="landing-page__apontamentos__conteudo__cards__card__descricao">Agora, PRESTE ATENÇÃO: se você acredita em fórmula mágica e resultados do dia para noite e com zero investimento, aqui não é o seu lugar!</p>
+                            <p class="apontamentos__conteudo__cards__card__descricao">Agora, PRESTE ATENÇÃO: se você acredita em fórmula mágica e resultados do dia para noite e com zero investimento, aqui não é o seu lugar!</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="landing-page__clientes">
-                <h2 class="landing-page__clientes__titulo">Alguns dos diversos clientes que decidiram estar no digital e com ótimos resultados...</h2>
+            <section class="clientes">
+                <h2 class="clientes__titulo">Alguns dos diversos clientes que decidiram estar no digital e com ótimos resultados...</h2>
 
-                <div class="landing-page__clientes__logos">
-                    <img src="midias/imagens/campo-belo.png" alt="" class="landing-page__clientes__logos__logo">
-                    <img src="midias/imagens/campo-belo.png" alt="" class="landing-page__clientes__logos__logo">
-                    <img src="midias/imagens/campo-belo.png" alt="" class="landing-page__clientes__logos__logo">
-                    <img src="midias/imagens/campo-belo.png" alt="" class="landing-page__clientes__logos__logo">
+                <div class="clientes__logos">
+                    <img src="/assets/midias/imagens/campo-belo.png" alt="" class="clientes__logos__logo">
+                    <img src="/assets/midias/imagens/campo-belo.png" alt="" class="clientes__logos__logo">
+                    <img src="/assets/midias/imagens/campo-belo.png" alt="" class="clientes__logos__logo">
+                    <img src="/assets/midias/imagens/campo-belo.png" alt="" class="clientes__logos__logo">
                 </div>
             </section>
+
+            <section class="faq">
+                <h2 class="faq__titulo">FAQ</h2>
+                <div class="faq__conteudo">
+                    <p class="faq__conteudo__descricao">
+                        Não está satisfeito com o atual número de clientes? Neste evento, você vai conhecer o passo a passo da “panfletagem digital” e descobrir como se tornar um dos profissionais mais desejados e bem pagos da internet, mesmo sendo um iniciante.
+                    </p>
+
+                    <div class="faq__conteudo__perguntas-respostas">
+                        <div class="faq__conteudo__perguntas-respostas__pergunta-resposta">
+                            <div class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta">
+                                <span class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__texto">O que é um Gestor de Anúncios Pagos?</span>
+                                
+                                <div class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__simbolos">
+                                    <span class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__simbolos__mais">+</span>
+                                    <span class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__simbolos__menos">-</span>
+                                </div>
+                            </div>
+                            <p class="faq__conteudo__perguntas-respostas__pergunta-resposta__resposta">Os anúncios pagos são aquelas “publicidades” que vemos nas redes sociais como “patrocinados” ou em sites. Normalmente, estão localizados no feed das redes sociais ou nos banners, em sites...</p>
+                        </div>
+                        <div class="faq__conteudo__perguntas-respostas__pergunta-resposta">
+                            <div class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta">
+                                <span class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__texto">O que é um Gestor de Anúncios Pagos?</span>
+                                
+                                <div class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__simbolos">
+                                    <span class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__simbolos__mais">+</span>
+                                    <span class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__simbolos__menos">-</span>
+                                </div>
+                            </div>
+                            <p class="faq__conteudo__perguntas-respostas__pergunta-resposta__resposta">Os anúncios pagos são aquelas “publicidades” que vemos nas redes sociais como “patrocinados” ou em sites. Normalmente, estão localizados no feed das redes sociais ou nos banners, em sites...</p>
+                        </div>
+                        <div class="faq__conteudo__perguntas-respostas__pergunta-resposta">
+                            <div class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta">
+                                <span class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__texto">O que é um Gestor de Anúncios Pagos?</span>
+                                
+                                <div class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__simbolos">
+                                    <span class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__simbolos__mais">+</span>
+                                    <span class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__simbolos__menos">-</span>
+                                </div>
+                            </div>
+                            <p class="faq__conteudo__perguntas-respostas__pergunta-resposta__resposta">Os anúncios pagos são aquelas “publicidades” que vemos nas redes sociais como “patrocinados” ou em sites. Normalmente, estão localizados no feed das redes sociais ou nos banners, em sites...</p>
+                        </div>
+                        <div class="faq__conteudo__perguntas-respostas__pergunta-resposta">
+                            <div class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta">
+                                <span class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__texto">O que é um Gestor de Anúncios Pagos?</span>
+                                
+                                <div class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__simbolos">
+                                    <span class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__simbolos__mais">+</span>
+                                    <span class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__simbolos__menos">-</span>
+                                </div>
+                            </div>
+                            <p class="faq__conteudo__perguntas-respostas__pergunta-resposta__resposta">Os anúncios pagos são aquelas “publicidades” que vemos nas redes sociais como “patrocinados” ou em sites. Normalmente, estão localizados no feed das redes sociais ou nos banners, em sites...</p>
+                        </div>
+                        <div class="faq__conteudo__perguntas-respostas__pergunta-resposta">
+                            <div class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta">
+                                <span class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__texto">O que é um Gestor de Anúncios Pagos?</span>
+                                
+                                <div class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__simbolos">
+                                    <span class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__simbolos__mais">+</span>
+                                    <span class="faq__conteudo__perguntas-respostas__pergunta-resposta__pergunta__simbolos__menos">-</span>
+                                </div>
+                            </div>
+                            <p class="faq__conteudo__perguntas-respostas__pergunta-resposta__resposta">Os anúncios pagos são aquelas “publicidades” que vemos nas redes sociais como “patrocinados” ou em sites. Normalmente, estão localizados no feed das redes sociais ou nos banners, em sites...</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="formulario" class="formulario">
+                <form action="formulario.php" method="post" class="formulario__form">
+                    <h2 class="formulario__form__titulo">Como vou te <span class="formulario__form__titulo__destaque">ajudar</span></h2>
+
+                    <p class="formulario__form__descricao">Aumente o alcance da sua marca, atraia mais clientes, venda mais e melhore seu faturamento!</p>
+                    
+                    <div class="formulario__form__inputs">
+                        <input type="text"  placeholder="Nome Completo" class="formulario__form__inputs__input">
+                        <input type="email" placeholder="Email"         class="formulario__form__inputs__input">
+                        <input type="text"  placeholder="Telefone"      class="formulario__form__inputs__input">
+                    </div>
+
+                    <button type="submit" class="formulario__form__botao">Aumentar Vendas!</button>
+                </form>
+
+                <div class="formulario__informacoes-adicionais">
+                    <div class="formulario__informacoes-adicionais__informacao-adicional">
+                        <p class="formulario__informacoes-adicionais__informacao-adicional__texto">Reconhecimento de marca</p>
+                        <svg class="formulario__informacoes-adicionais__informacao-adicional__icone">
+                            <use xlink:href="assets/midias/icones/lattes.svg#lattes"></use>
+                        </svg>
+                    </div>
+                    <div class="formulario__informacoes-adicionais__informacao-adicional">
+                        <p class="formulario__informacoes-adicionais__informacao-adicional__texto">Reconhecimento de marca</p>
+                        <svg class="formulario__informacoes-adicionais__informacao-adicional__icone">
+                            <use xlink:href="assets/midias/icones/lattes.svg#lattes"></use>
+                        </svg>
+                    </div>
+                    <div class="formulario__informacoes-adicionais__informacao-adicional">
+                        <p class="formulario__informacoes-adicionais__informacao-adicional__texto">Reconhecimento de marca</p>
+                        <svg class="formulario__informacoes-adicionais__informacao-adicional__icone">
+                            <use xlink:href="assets/midias/icones/lattes.svg#lattes"></use>
+                        </svg>
+                    </div>
+                    <div class="formulario__informacoes-adicionais__informacao-adicional">
+                        <p class="formulario__informacoes-adicionais__informacao-adicional__texto">Reconhecimento de marca</p>
+                        <svg class="formulario__informacoes-adicionais__informacao-adicional__icone">
+                            <use xlink:href="assets/midias/icones/lattes.svg#lattes"></use>
+                        </svg>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="footer">
+                <p class="footer__informacoes">
+                    Digital Target Estratégias Digitais <br />
+                    31.376.801/0001-80
+                </p>
+            </footer>
         </div>
+
+        <script src="assets/js/menu.js"></script>
+        <script src="assets/js/faq.js"></script>
     </body>
 </html

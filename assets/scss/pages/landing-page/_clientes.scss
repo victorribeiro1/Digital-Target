@@ -1,0 +1,15 @@
+.clientes {
+    @include flex-container(column, flex-start, center);
+
+    padding: 0 var(--distancia-horizontal);
+
+    &__logos {
+        width: 100%;
+
+        @include flex-container(row, space-between, center);
+
+        &__logo {
+            width: 10%;
+        }
+    }
+}
