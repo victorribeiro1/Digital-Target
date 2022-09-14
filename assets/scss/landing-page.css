@@ -503,7 +503,7 @@ h2 {
 }
 @media only screen and (max-width: 425px) {
   .header {
-    min-height: 900px;
+    min-height: 760px;
   }
 }
 .header__menu-fixo {
@@ -610,6 +610,13 @@ h2 {
   margin-bottom: 20px;
   letter-spacing: 7px;
   transform: translate(-7px);
+}
+@media only screen and (max-width: 490px) {
+  .header__conteudo__informacoes__informacoes-principais__titulo {
+    font-size: 3.8rem !important;
+    margin-bottom: 10px;
+    transform: translate(0px);
+  }
 }
 .header__conteudo__informacoes__informacoes-principais__descricao {
   font-size: 2rem;

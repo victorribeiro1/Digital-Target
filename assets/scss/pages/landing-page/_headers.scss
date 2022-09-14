@@ -49,7 +49,7 @@
     }
 
     @media only screen and (max-width: 425px) {
-        min-height: 900px;
+        min-height: 760px;
     }
 
     &__menu-fixo {
@@ -183,6 +183,13 @@
                     letter-spacing: 7px;
 
                     transform: translate(-7px);
+                    
+                    @media only screen and (max-width: 490px) {
+                        // background-color: red;
+                        font-size: 3.8rem !important;
+                        margin-bottom: 10px;
+                        transform: translate(-0px);
+                    }
                 }
 
                 &__descricao {
