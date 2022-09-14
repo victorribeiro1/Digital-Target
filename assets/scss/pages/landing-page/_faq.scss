@@ -12,6 +12,21 @@
     &__conteudo {
         @include flex-container(row, space-between, flex-start);
 
+        @media only screen and (max-width: 1150px) {
+            @include flex-container(column, flex-start, center);
+            
+            width: 100%;
+
+            &__descricao {
+                width: 100% !important;
+                margin-bottom: var(--distancia-vertical);
+            }
+
+            &__perguntas-respostas {
+                width: 100% !important;
+            }
+        }
+
         &__descricao {
             color: var(--cor-fundo);
 

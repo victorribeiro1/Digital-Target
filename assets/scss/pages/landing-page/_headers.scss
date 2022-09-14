@@ -263,7 +263,7 @@
         &__container-imagem {
             position: absolute;
             right: var(--distancia-horizontal);
-            bottom: 0;
+            bottom: -1px;
 
             &__imagem {
                 // background-color: #876;
@@ -297,8 +297,6 @@
     }
 
     @media only screen and (max-width: 1150px) {
-        height: 90vh;
-
         &__conteudo {
             @include flex-container(column, flex-start, center);
 

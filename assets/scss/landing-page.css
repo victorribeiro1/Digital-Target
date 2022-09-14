@@ -685,7 +685,7 @@ h2 {
 .header__conteudo__container-imagem {
   position: absolute;
   right: var(--distancia-horizontal);
-  bottom: 0;
+  bottom: -1px;
 }
 .header__conteudo__container-imagem__imagem {
   width: 70rem;
@@ -708,9 +708,6 @@ h2 {
   filter: blur(90px);
 }
 @media only screen and (max-width: 1150px) {
-  .header {
-    height: 90vh;
-  }
   .header__conteudo {
     display: flex;
     flex-direction: column;
@@ -795,6 +792,7 @@ h2 {
 }
 @media only screen and (max-width: 1150px) {
   .beneficios__cards__card {
+    height: 20rem;
     width: 100%;
   }
   .beneficios__cards__card:nth-of-type(3) {
@@ -834,6 +832,15 @@ h2 {
   font-size: 2.5rem;
   display: block;
   margin-bottom: 10px;
+}
+@media only screen and (max-width: 1150px) {
+  .beneficios__cards__card__frente__informacoes__titulo {
+    width: 100%;
+    font-size: 2rem;
+  }
+  .beneficios__cards__card__frente__informacoes__titulo:nth-of-type(3) {
+    margin-bottom: 15px;
+  }
 }
 .beneficios__cards__card__frente__informacoes__descricao {
   font-size: 1.8rem;
@@ -917,7 +924,8 @@ h2 {
   border: 1px solid var(--cor-terciaria);
   border-radius: 10px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 0 20px;
+  height: 15rem;
   width: 50%;
   transition: var(--transition-1);
 }
@@ -929,7 +937,11 @@ h2 {
 }
 @media only screen and (max-width: 1150px) {
   .apontamentos__conteudo__cards__card {
+    height: 20rem;
     width: 100%;
+  }
+  .apontamentos__conteudo__cards__card__container-numero__numero {
+    transform: translate(0px, 0px) !important;
   }
 }
 .apontamentos__conteudo__cards__card__container-numero {
@@ -1033,6 +1045,23 @@ h2 {
   justify-content: space-between;
   align-items: flex-start;
   flex-wrap: nowrap;
+}
+@media only screen and (max-width: 1150px) {
+  .faq__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .faq__conteudo__descricao {
+    width: 100% !important;
+    margin-bottom: var(--distancia-vertical);
+  }
+  .faq__conteudo__perguntas-respostas {
+    width: 100% !important;
+  }
 }
 .faq__conteudo__descricao {
   color: var(--cor-fundo);
