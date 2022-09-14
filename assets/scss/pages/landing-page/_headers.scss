@@ -5,8 +5,8 @@
 
     border-bottom-left-radius: 45px;
     min-height: 750px;
-    height: 85vh;
-    // max-height: 1000px;
+    // height: 85vh;
+    // // max-height: 1000px;
 
     margin-top: 0;
     position: relative;
@@ -27,7 +27,7 @@
         min-height: 680px;
     }
 
-    @media only screen and (max-width: 1155px) {
+    @media only screen and (max-width: 1150px) {
         min-height: 870px;
     }
 
@@ -47,9 +47,12 @@
         flex: none;
 
         height: calc(var(--distancia-vertical) * 1.5);
-        width: calc(100% - var(--distancia-horizontal) * 2);
+        width: 100%;
 
         position: fixed;
+        left: 0;
+        
+        padding: 0 var(--distancia-horizontal);
 
         transform: translateY(0%);
         transition: 
@@ -230,6 +233,9 @@
 
                     height: 4.5rem;
                     width: 100%;
+
+                    position: relative;
+                    z-index: 1;
                 }
             }
         }

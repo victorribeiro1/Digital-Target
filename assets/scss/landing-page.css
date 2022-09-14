@@ -462,7 +462,6 @@ h2 {
   background-color: var(--cor-principal);
   border-bottom-left-radius: 45px;
   min-height: 750px;
-  height: 85vh;
   margin-top: 0;
   position: relative;
   overflow: hidden;
@@ -484,7 +483,7 @@ h2 {
     min-height: 680px;
   }
 }
-@media only screen and (max-width: 1155px) {
+@media only screen and (max-width: 1150px) {
   .header {
     min-height: 870px;
   }
@@ -508,8 +507,10 @@ h2 {
   background-color: var(--cor-principal);
   flex: none;
   height: calc(var(--distancia-vertical) * 1.5);
-  width: calc(100% - var(--distancia-horizontal) * 2);
+  width: 100%;
   position: fixed;
+  left: 0;
+  padding: 0 var(--distancia-horizontal);
   transform: translateY(0%);
   transition: transform var(--transition-1), opacity var(--transition-1);
   z-index: 100;
@@ -663,6 +664,8 @@ h2 {
   font-size: 2rem;
   height: 4.5rem;
   width: 100%;
+  position: relative;
+  z-index: 1;
 }
 .header__conteudo__container-imagem {
   position: absolute;
@@ -751,6 +754,15 @@ h2 {
   flex-wrap: wrap;
   width: 100%;
 }
+@media only screen and (max-width: 1150px) {
+  .beneficios__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
 .beneficios__cards__card {
   cursor: pointer;
   border-radius: 10px;
@@ -764,6 +776,14 @@ h2 {
 }
 .beneficios__cards__card:hover .beneficios__cards__card__frente {
   opacity: 0;
+}
+@media only screen and (max-width: 1150px) {
+  .beneficios__cards__card {
+    width: 100%;
+  }
+  .beneficios__cards__card:nth-of-type(3) {
+    margin-bottom: 20px;
+  }
 }
 .beneficios__cards__card__frente {
   display: flex;
@@ -800,7 +820,7 @@ h2 {
   margin-bottom: 10px;
 }
 .beneficios__cards__card__frente__informacoes__descricao {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 .beneficios__cards__card__verso {
   background-color: var(--cor-terciaria);
@@ -891,6 +911,11 @@ h2 {
 .apontamentos__conteudo__cards__card:hover {
   background-color: var(--cor-terciaria);
 }
+@media only screen and (max-width: 1150px) {
+  .apontamentos__conteudo__cards__card {
+    width: 100%;
+  }
+}
 .apontamentos__conteudo__cards__card__container-numero {
   border: 1px solid var(--cor-terciaria);
   border-radius: 9999px;
@@ -918,7 +943,7 @@ h2 {
 }
 .apontamentos__conteudo__cards__card__descricao {
   color: var(--cor-fundo);
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .clientes {

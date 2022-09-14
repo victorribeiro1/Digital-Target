@@ -74,6 +74,10 @@
                     background-color: var(--cor-terciaria);
                 }
 
+                @media only screen and (max-width: 1150px) {
+                    width: 100%;
+                }
+
                 &__container-numero {
                     border: 1px solid var(--cor-terciaria);
                     border-radius: 9999px;
@@ -108,7 +112,7 @@
 
                 &__descricao {
                     color: var(--cor-fundo);
-                    font-size: 1.5rem;
+                    font-size: 1.8rem;
                 }
             }
         }
