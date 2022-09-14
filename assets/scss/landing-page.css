@@ -387,19 +387,19 @@ table {
 }
 
 @font-face {
-  src: url("../midias/fontes/lato/Lato-Light.woff");
+  src: url("/assets/midias/fontes/lato/Lato-Light.woff");
   font-family: "Lato Light";
 }
 @font-face {
-  src: url("../midias/fontes/lato/Lato-Regular.woff");
+  src: url("/assets/midias/fontes/lato/Lato-Regular.woff");
   font-family: "Lato Regular";
 }
 @font-face {
-  src: url("../midias/fontes/lato/Lato-Bold.woff");
+  src: url("/assets/midias/fontes/lato/Lato-Bold.woff");
   font-family: "Lato Bold";
 }
 @font-face {
-  src: url("../midias/fontes/lato/Lato-Black.woff");
+  src: url("/assets/midias/fontes/lato/Lato-Black.woff");
   font-family: "Lato Black";
 }
 html {
@@ -488,9 +488,17 @@ h2 {
     min-height: 870px;
   }
 }
-@media only screen and (max-width: 485px) {
+@media only screen and (max-width: 525px) {
   .header {
     min-height: 890px;
+  }
+}
+@media only screen and (max-width: 525px) and (max-height: 900px) {
+  .header {
+    min-height: 790px;
+  }
+  .header__conteudo__container-imagem__imagem {
+    width: 40rem !important;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -679,6 +687,7 @@ h2 {
   position: relative;
   bottom: -1px;
   z-index: 10;
+  transition: var(--transition-1);
 }
 .header__conteudo__container-imagem__luz {
   height: 60rem;

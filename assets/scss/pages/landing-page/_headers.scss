@@ -31,8 +31,21 @@
         min-height: 870px;
     }
 
-    @media only screen and (max-width: 485px) {
+    @media only screen and (max-width: 525px) {
         min-height: 890px;
+        
+        @media only screen and (max-height: 900px) {
+            min-height: 790px;
+
+            &__conteudo {
+                &__container-imagem {
+                    &__imagem {
+                        // background-color: red;
+                        width: 40rem !important;
+                    }
+                }
+            }
+        }
     }
 
     @media only screen and (max-width: 425px) {
@@ -256,6 +269,8 @@
                 bottom: -1px;
 
                 z-index: 10;
+
+                transition: var(--transition-1);
             }
 
             &__luz {
