@@ -4,7 +4,9 @@
     background-color: var(--cor-principal);
 
     border-bottom-left-radius: 45px;
+    min-height: 750px;
     height: 85vh;
+    // max-height: 1000px;
 
     margin-top: 0;
     position: relative;
@@ -15,8 +17,26 @@
 
     transition: var(--transition-1);
 
-    @media only screen and (max-width: 1500px) {
-        height: 75vh;
+    @media only screen and (max-width: 1600px) {
+        height: unset;
+
+        min-height: 630px;
+    }
+
+    @media only screen and (max-width: 1350px) {
+        min-height: 680px;
+    }
+
+    @media only screen and (max-width: 1155px) {
+        min-height: 870px;
+    }
+
+    @media only screen and (max-width: 485px) {
+        min-height: 890px;
+    }
+
+    @media only screen and (max-width: 425px) {
+        min-height: 900px;
     }
 
     &__menu-fixo {
@@ -99,7 +119,7 @@
     &__conteudo {
         @include flex-container(row, space-between, unset);
 
-        height: 90%;
+        // height: 90%;
 
         margin-top: var(--distancia-horizontal);
 
