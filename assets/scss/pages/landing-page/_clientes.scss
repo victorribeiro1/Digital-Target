@@ -7,9 +7,36 @@
         width: 100%;
 
         @include flex-container(row, space-between, center);
+        
+        @media only screen and (max-width: 850px) {
+            @include flex-container(row, space-between, center, wrap);
 
-        &__logo {
-            width: 10%;
+            &__container-logo {
+                width: 50% !important;
+
+                @include flex-container(row, center, center);
+
+                @media only screen and (max-width: 600px) {
+                    &:nth-of-type(1),
+                    &:nth-of-type(3) {
+                        @include flex-container(row, flex-start, center);
+                    }
+
+                    &:nth-of-type(2),
+                    &:nth-of-type(4) {
+                        @include flex-container(row, flex-end, center);
+                    }
+                }
+            }
+        }
+
+
+        &__container-logo {
+            width: 25%;
+
+            &__logo {
+                width: 20rem;
+            }
         }
     }
 }
