@@ -497,6 +497,9 @@ h2 {
   .header {
     min-height: 790px;
   }
+  .header__conteudo__informacoes__informacoes-principais {
+    margin-bottom: 30px !important;
+  }
   .header__conteudo__container-imagem__imagem {
     width: 40rem !important;
   }
@@ -611,11 +614,15 @@ h2 {
   letter-spacing: 7px;
   transform: translate(-7px);
 }
+@media only screen and (max-width: 1150px) {
+  .header__conteudo__informacoes__informacoes-principais__titulo {
+    transform: translate(0px);
+  }
+}
 @media only screen and (max-width: 490px) {
   .header__conteudo__informacoes__informacoes-principais__titulo {
     font-size: 3.8rem !important;
     margin-bottom: 10px;
-    transform: translate(0px);
   }
 }
 .header__conteudo__informacoes__informacoes-principais__descricao {
@@ -1125,28 +1132,78 @@ h2 {
 }
 
 .formulario {
+  padding: 0 var(--distancia-horizontal);
+}
+.formulario__titulo {
+  margin-bottom: var(--distancia-vertical);
+  display: none;
+}
+@media only screen and (max-width: 850px) {
+  .formulario__titulo {
+    display: block;
+  }
+}
+.formulario__titulo__destaque {
+  font-family: "Lato Black";
+}
+.formulario__conteudo {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
   flex-wrap: nowrap;
-  padding: 0 var(--distancia-horizontal);
 }
-.formulario__form {
+@media only screen and (max-width: 850px) {
+  .formulario__conteudo {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+  .formulario__conteudo__form {
+    width: 100% !important;
+  }
+  .formulario__conteudo__form__titulo {
+    display: none;
+  }
+  .formulario__conteudo__form__descricao {
+    display: none;
+  }
+  .formulario__conteudo__informacoes-adicionais {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+    margin-bottom: calc(var(--distancia-vertical) / 2);
+  }
+  .formulario__conteudo__informacoes-adicionais__informacao-adicional {
+    width: 49.5% !important;
+  }
+}
+@media only screen and (max-width: 850px) and (max-width: 650px) {
+  .formulario__conteudo__informacoes-adicionais__informacao-adicional {
+    width: 100% !important;
+  }
+}
+.formulario__conteudo__form {
   width: 40%;
 }
-.formulario__form__titulo {
+.formulario__conteudo__form__titulo {
   text-align: left;
   margin-bottom: 10px;
 }
-.formulario__form__titulo__destaque {
+.formulario__conteudo__form__titulo__destaque {
   font-family: "Lato Black";
 }
-.formulario__form__descricao {
+.formulario__conteudo__form__descricao {
   font-size: 2rem;
   margin-bottom: 45px;
 }
-.formulario__form__inputs {
+.formulario__conteudo__form__inputs {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1155,7 +1212,7 @@ h2 {
   width: 100%;
   margin-bottom: 20px;
 }
-.formulario__form__inputs__input {
+.formulario__conteudo__form__inputs__input {
   background-color: var(--cor-principal);
   border: none;
   border-radius: 5px;
@@ -1165,19 +1222,19 @@ h2 {
   height: 3rem;
   width: 100%;
 }
-.formulario__form__inputs__input::-moz-placeholder {
+.formulario__conteudo__form__inputs__input::-moz-placeholder {
   color: var(--cor-fundo);
 }
-.formulario__form__inputs__input:-ms-input-placeholder {
+.formulario__conteudo__form__inputs__input:-ms-input-placeholder {
   color: var(--cor-fundo);
 }
-.formulario__form__inputs__input::placeholder {
+.formulario__conteudo__form__inputs__input::placeholder {
   color: var(--cor-fundo);
 }
-.formulario__form__inputs__input:not(:last-of-type) {
+.formulario__conteudo__form__inputs__input:not(:last-of-type) {
   margin-bottom: 8px;
 }
-.formulario__form__botao {
+.formulario__conteudo__form__botao {
   background-color: var(--cor-secundaria);
   border: none;
   cursor: pointer;
@@ -1186,7 +1243,7 @@ h2 {
   height: 5rem;
   width: 100%;
 }
-.formulario__informacoes-adicionais {
+.formulario__conteudo__informacoes-adicionais {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1195,7 +1252,7 @@ h2 {
   width: 40%;
   transform: translateY(3px);
 }
-.formulario__informacoes-adicionais__informacao-adicional {
+.formulario__conteudo__informacoes-adicionais__informacao-adicional {
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
@@ -1205,16 +1262,16 @@ h2 {
   border-radius: 5px;
   height: 7rem;
   width: 100%;
-  padding: 0 var(--distancia-horizontal);
+  padding: 0 20px;
 }
-.formulario__informacoes-adicionais__informacao-adicional:not(:last-of-type) {
+.formulario__conteudo__informacoes-adicionais__informacao-adicional:not(:last-of-type) {
   margin-bottom: 8px;
 }
-.formulario__informacoes-adicionais__informacao-adicional__texto {
+.formulario__conteudo__informacoes-adicionais__informacao-adicional__texto {
   color: var(--cor-secundaria);
   font-size: 1.8rem;
 }
-.formulario__informacoes-adicionais__informacao-adicional__icone {
+.formulario__conteudo__informacoes-adicionais__informacao-adicional__icone {
   fill: var(--cor-secundaria);
   height: 3rem;
   width: 3rem;

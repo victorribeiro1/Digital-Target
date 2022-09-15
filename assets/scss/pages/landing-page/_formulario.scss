@@ -1,106 +1,158 @@
 .formulario {
-    @include flex-container(row, space-between, flex-end);
-
     padding: 0 var(--distancia-horizontal);
 
-    &__form {
-        width: 40%;
+    &__titulo {
+        margin-bottom: var(--distancia-vertical);
 
-        &__titulo {
-            text-align: left;
+        display: none;
 
-            margin-bottom: 10px;
-
-            &__destaque {
-                font-family: "Lato Black";
-            }
+        @media only screen and (max-width: 850px) {
+            display: block;
         }
 
-        &__descricao {
-            font-size: 2rem;
-
-            margin-bottom: 45px
+        &__destaque {
+            font-family: "Lato Black";
         }
 
-        &__inputs {
-            @include flex-container(column, flex-start, flex-start);
+    }
+
+    &__conteudo {
+        @include flex-container(row, space-between, flex-end);
+        
+        @media only screen and (max-width: 850px) {
+            @include flex-container(column-reverse, space-between, flex-end);
 
             width: 100%;
 
-            margin-bottom: 20px;
+            &__form {
+                width: 100% !important;
 
-            &__input {
-                background-color: var(--cor-principal);
-
-                border: none;
-                border-radius: 5px;
-
-                color: var(--cor-fundo);
-
-                font-size: 2rem;
-
-                padding: 25px;
-
-                height: 3rem;
-                width: 100%;    
-
-                &::placeholder {
-                    color: var(--cor-fundo);
+                &__titulo {
+                    display: none;
                 }
 
+                &__descricao {
+                    display: none;
+                }
+            }
+
+            &__informacoes-adicionais {
+                @include flex-container(row !important, space-between !important, center, wrap !important);
+
+                width: 100% !important;
+
+                margin-bottom: calc(var(--distancia-vertical) / 2);
+
+                &__informacao-adicional {
+                    width: 49.5% !important;
+
+                    @media only screen and (max-width: 650px) {
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+
+        &__form {
+            width: 40%;
+
+    
+            &__titulo {
+                text-align: left;
+    
+                margin-bottom: 10px;
+    
+                &__destaque {
+                    font-family: "Lato Black";
+                }
+            }
+    
+            &__descricao {
+                font-size: 2rem;
+    
+                margin-bottom: 45px
+            }
+    
+            &__inputs {
+                @include flex-container(column, flex-start, flex-start);
+    
+                width: 100%;
+    
+                margin-bottom: 20px;
+    
+                &__input {
+                    background-color: var(--cor-principal);
+    
+                    border: none;
+                    border-radius: 5px;
+    
+                    color: var(--cor-fundo);
+    
+                    font-size: 2rem;
+    
+                    padding: 25px;
+    
+                    height: 3rem;
+                    width: 100%;    
+    
+                    &::placeholder {
+                        color: var(--cor-fundo);
+                    }
+    
+                    &:not(:last-of-type) {
+                        margin-bottom: 8px;
+                    }
+                }
+            }
+    
+            &__botao {
+                background-color: var(--cor-secundaria);
+    
+                border: none;
+    
+                cursor: pointer;
+    
+                font-family: "Lato Bold";
+                font-size: 2rem;
+    
+                height: 5rem;
+                width: 100%;
+            }
+        }
+    
+        &__informacoes-adicionais {
+            @include flex-container(column, flex-start, flex-start);
+    
+            width: 40%;
+    
+            transform: translateY(3px);
+    
+            &__informacao-adicional {
+                @include flex-container(row-reverse, space-between, center);
+                background-color: var(--cor-principal);
+                border-radius: 5px;
+    
+                height: 7rem;
+                width: 100%;
+    
+                padding: 0 20px;
+    
                 &:not(:last-of-type) {
                     margin-bottom: 8px;
                 }
-            }
-        }
-
-        &__botao {
-            background-color: var(--cor-secundaria);
-
-            border: none;
-
-            cursor: pointer;
-
-            font-family: "Lato Bold";
-            font-size: 2rem;
-
-            height: 5rem;
-            width: 100%;
-        }
-    }
-
-    &__informacoes-adicionais {
-        @include flex-container(column, flex-start, flex-start);
-
-        width: 40%;
-
-        transform: translateY(3px);
-
-        &__informacao-adicional {
-            @include flex-container(row-reverse, space-between, center);
-            background-color: var(--cor-principal);
-            border-radius: 5px;
-
-            height: 7rem;
-            width: 100%;
-
-            padding: 0 var(--distancia-horizontal);
-
-            &:not(:last-of-type) {
-                margin-bottom: 8px;
-            }
-
-            &__texto {
-                color: var(--cor-secundaria);
-
-                font-size: 1.8rem;
-            }
-
-            &__icone {
-                fill: var(--cor-secundaria);
-
-                height: 3rem;
-                width:  3rem;
+    
+                &__texto {
+                    color: var(--cor-secundaria);
+    
+                    font-size: 1.8rem;
+                }
+    
+                &__icone {
+                    fill: var(--cor-secundaria);
+    
+                    height: 3rem;
+                    width:  3rem;
+                }
             }
         }
     }

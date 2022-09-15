@@ -38,6 +38,11 @@
             min-height: 790px;
 
             &__conteudo {
+                &__informacoes {
+                    &__informacoes-principais {
+                        margin-bottom: 30px !important;
+                    }
+                }
                 &__container-imagem {
                     &__imagem {
                         // background-color: red;
@@ -183,12 +188,14 @@
                     letter-spacing: 7px;
 
                     transform: translate(-7px);
+
+                    @media only screen and (max-width: 1150px) {
+                        transform: translate(-0px);
+                    }
                     
                     @media only screen and (max-width: 490px) {
-                        // background-color: red;
                         font-size: 3.8rem !important;
                         margin-bottom: 10px;
-                        transform: translate(-0px);
                     }
                 }
 
