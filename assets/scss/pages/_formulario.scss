@@ -1,0 +1,138 @@
+.formulario {
+    @include flex-container(column, flex-start, center);
+
+    background-color: var(--cor-fundo);
+
+    color: var(--cor-fundo);
+
+    max-width: 1920px;
+
+    & > * {
+        width: 65%;
+
+        transition: var(--transition-1);
+
+        @media only screen and (max-width: 850px) {
+            width: 80%;
+        }
+
+        @media only screen and (max-width: 700px) {
+            width: 95%;
+        }
+    }
+
+    &__header {
+        background-color: var(--cor-principal);
+
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+
+        margin-bottom: 20px;
+        padding: 40px;
+
+        @media only screen and (max-width: 700px) {
+            margin-bottom: 15px;
+        }
+
+        &__texto {
+            font-size: 2rem;
+
+            &__paragrafo {
+                &:not(:last-of-type) {
+                    margin-bottom: 20px;
+                }
+                
+                &__destaque {
+                    color: var(--cor-secundaria);
+                }
+            }
+        }
+    }
+
+    &__forms {
+        &__pergunta {
+            border-radius: 10px;
+            background-color: var(--cor-principal);
+
+            // &:not(:last-of-type) {
+                margin-bottom: 20px;
+            // }
+
+            // &:last-of-type {
+            //     border-radius: 0;
+            //     border-top-left-radius:  10px;
+            //     border-top-right-radius: 10px;
+            // }
+
+            @media only screen and (max-width: 700px) {
+                margin-bottom: 15px;
+            }
+
+            padding: 30px;
+
+            &__titulo {
+                font-size: 2rem;
+
+                margin-bottom: 40px;
+
+                text-align: left;
+
+                @media only screen and (max-width: 700px) {
+                    margin-bottom: 30px;
+                }
+            }
+
+            &__checkboxs {
+                @include flex-container(column, flex-start, flex-start);
+
+                margin-bottom: 20px;
+
+                &__opcao {
+                    @include flex-container(row, flex-start, center);
+
+                    &:not(:last-of-type) {
+                        margin-bottom: 10px;
+                    }
+                    
+                    &__checkbox {
+                        cursor: pointer;
+
+                        margin-right: 20px;
+                    }
+                    
+                    &__label {
+                        cursor: pointer;
+                        
+                        font-size: 2rem;
+                    }
+                }
+                
+                &__checkbox {
+                    &:not(:last-of-type) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+
+            &__input {
+                &[type='text'] {
+                    border: none;
+                    border-bottom: 1px solid #383838;
+                    background-color: transparent;
+
+                    color: var(--cor-fundo);
+
+                    font-size: 2rem;
+
+                    outline: none;
+
+                    width: 100%;
+                }
+
+                &[type='range'] {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

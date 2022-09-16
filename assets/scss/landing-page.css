@@ -406,6 +406,7 @@ html {
   font-size: 62.5%;
   font-family: "Lato Light", "Segoe UI", Arial, Helvetica, sans-serif;
   letter-spacing: 2px;
+  line-height: 1.5;
   transition: var(--transition-1);
 }
 @media only screen and (max-width: 1800px) {
