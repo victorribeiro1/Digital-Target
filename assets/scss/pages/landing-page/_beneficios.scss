@@ -1,6 +1,7 @@
 .beneficios {
     @include flex-container(column, flex-start, center);
 
+
     padding: 0 var(--distancia-horizontal);
 
     &__cards {

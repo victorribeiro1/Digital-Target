@@ -7,7 +7,10 @@ html {
 }
 
 body {
+    background-color: #6a6a6a;
     box-sizing: border-box;
+
+    @include flex-container();
 
     &::-webkit-scrollbar {
         width: 4px;

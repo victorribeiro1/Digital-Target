@@ -428,7 +428,11 @@ html {
     font-size: 45%;
   }
 }
-
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 38%;
+  }
+}
 * {
   box-sizing: inherit;
 }
@@ -438,7 +442,13 @@ html {
 }
 
 body {
+  background-color: #6a6a6a;
   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 body::-webkit-scrollbar {
   width: 4px;

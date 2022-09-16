@@ -66,13 +66,14 @@
 
         height: calc(var(--distancia-vertical) * 1.5);
         width: 100%;
+        max-width: 1920px;
 
         position: fixed;
-        left: 0;
+        left: 50%;
         
         padding: 0 var(--distancia-horizontal);
 
-        transform: translateY(0%);
+        transform: translateY(0%) translateX(-50%);
         transition: 
             transform var(--transition-1),
             opacity var(--transition-1);
@@ -80,7 +81,7 @@
         z-index: 100;
 
         &.hide {
-            transform: translateY(-30%);
+            transform: translateY(-30%) translateX(-50%);
             opacity: 0;
          }
 
@@ -93,7 +94,7 @@
             bottom: 0;
 
             height: 1px;
-            width: calc(100% + 200px);
+            width: 100%;
 
             transform: translate(calc(-1 * var(--distancia-horizontal)));
         }

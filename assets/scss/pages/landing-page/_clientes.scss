@@ -34,6 +34,8 @@
         &__container-logo {
             width: 25%;
 
+            @include flex-container(row, center);
+
             &__logo {
                 width: 20rem;
             }
