@@ -478,14 +478,31 @@ h2 {
   fill: var(--color-secondary);
 }
 
+body {
+  background-color: var(--cor-principal);
+}
+
 .obrigado {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  height: 100%;
+  background-color: var(--cor-principal);
+  height: 100vh;
   width: 100%;
+  max-height: 1344px;
+  max-width: 2560px;
+}
+@media only screen and (min-width: 2560px) {
+  .obrigado {
+    border-radius: 10px;
+  }
+}
+@media only screen and (max-height: 760px) {
+  .obrigado {
+    height: unset;
+  }
 }
 .obrigado__container {
   display: flex;
@@ -493,15 +510,48 @@ h2 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  background-color: var(--cor-principal);
-  padding: 100px;
-  height: 100vh;
-  width: 100%;
+  border-radius: 3px;
+  padding: var(--distancia-vertical) var(--distancia-horizontal);
+  height: 70%;
+  width: 80%;
+  min-height: 650px;
+}
+@media only screen and (max-width: 1100px) {
+  .obrigado__container {
+    height: 100%;
+    width: 100%;
+  }
+}
+@media only screen and (max-height: 860px) {
+  .obrigado__container {
+    height: 80%;
+    width: 90%;
+  }
+}
+@media only screen and (max-height: 760px) {
+  .obrigado__container {
+    height: 100%;
+    width: 100%;
+  }
 }
 .obrigado__container__container-icone {
-  height: 100px;
-  width: 100px;
   position: relative;
+  height: 16rem;
+  width: 16rem;
+}
+@media only screen and (max-width: 960px) {
+  .obrigado__container__container-icone {
+    height: 12rem !important;
+    width: 12rem !important;
+  }
+  .obrigado__container__container-icone__circulo {
+    height: 12rem !important;
+    width: 12rem !important;
+  }
+  .obrigado__container__container-icone__icone {
+    height: 6rem !important;
+    width: 6rem !important;
+  }
 }
 .obrigado__container__container-icone > * {
   position: absolute;
@@ -512,11 +562,81 @@ h2 {
 .obrigado__container__container-icone__circulo {
   border: 1px solid var(--cor-secundaria);
   border-radius: 999px;
-  height: 100%;
-  width: 100%;
+  height: 16rem;
+  width: 16rem;
 }
 .obrigado__container__container-icone__icone {
   fill: var(--cor-secundaria);
-  height: 50%;
-  width: 50%;
+  height: 8rem;
+  width: 8rem;
+}
+.obrigado__container__texto {
+  color: var(--cor-fundo);
+  font-size: 2.2rem;
+  text-align: center;
+  transform: translateY(-80px);
+}
+.obrigado__container__texto__linha {
+  display: block;
+}
+.obrigado__container__texto__linha:not(:last-of-type) {
+  margin-bottom: 10px;
+}
+.obrigado__container__texto__linha__destaque {
+  color: var(--cor-secundaria);
+  text-transform: uppercase;
+}
+.obrigado__container__redes-sociais {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.obrigado__container__redes-sociais__texto {
+  color: var(--cor-fundo);
+  font-size: 2rem;
+  margin-bottom: 25px;
+}
+@media only screen and (max-width: 333px) {
+  .obrigado__container__redes-sociais__texto {
+    margin-bottom: 15px;
+  }
+}
+.obrigado__container__redes-sociais__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.obrigado__container__redes-sociais__container__link, .obrigado__container__redes-sociais__container__link:visited, .obrigado__container__redes-sociais__container__link:link {
+  fill: var(--cor-secundaria);
+}
+.obrigado__container__redes-sociais__container__link__icone--1 {
+  height: 4.3rem;
+  width: 4.3rem;
+}
+.obrigado__container__redes-sociais__container__link__icone--2 {
+  height: 3.3rem;
+  width: 3.3rem;
+}
+.obrigado__container__redes-sociais__container__link__icone--3 {
+  height: 4rem;
+  width: 4rem;
+}
+@media only screen and (max-width: 960px) {
+  .obrigado__container__redes-sociais__container__link__icone--1 {
+    height: 3.1rem;
+    width: 3.1rem;
+  }
+  .obrigado__container__redes-sociais__container__link__icone--2 {
+    height: 2.3rem;
+    width: 2.3rem;
+  }
+  .obrigado__container__redes-sociais__container__link__icone--3 {
+    height: 2.9rem;
+    width: 2.9rem;
+  }
 }/*# sourceMappingURL=obrigado.css.map */
