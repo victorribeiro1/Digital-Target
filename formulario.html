@@ -30,8 +30,23 @@
             <form id="formulario" action="obrigado.php" class="formulario__forms">
                 <div class="formulario__forms__pergunta">
                     <h2 class="formulario__forms__pergunta__titulo">01) De 1 a 10, onde 1 significa muito pouco e 10 significa muito. Qual o nível de comprometimento que você tem em melhorar os resultados do seu negócio?</h2>
-                    <input type="range" name="pergunta2" class="formulario__forms__pergunta__input" min="1" max="10" step="1">
-                    
+
+                    <div class="formulario__forms__pergunta__container-range">
+                        <div class="formulario__forms__pergunta__container-range__numeros">
+                            <span class="formulario__forms__pergunta__container-range__numeros__numero">1</span>
+                            <span class="formulario__forms__pergunta__container-range__numeros__numero">2</span>
+                            <span class="formulario__forms__pergunta__container-range__numeros__numero">3</span>
+                            <span class="formulario__forms__pergunta__container-range__numeros__numero">4</span>
+                            <span class="formulario__forms__pergunta__container-range__numeros__numero">5</span>
+                            <span class="formulario__forms__pergunta__container-range__numeros__numero">6</span>
+                            <span class="formulario__forms__pergunta__container-range__numeros__numero">7</span>
+                            <span class="formulario__forms__pergunta__container-range__numeros__numero">8</span>
+                            <span class="formulario__forms__pergunta__container-range__numeros__numero">9</span>
+                            <span class="formulario__forms__pergunta__container-range__numeros__numero">10</span>
+                        </div>
+
+                        <input type="range" name="pergunta2" class="formulario__forms__pergunta__container-range__input" min="1" max="10" step="1">
+                    </div>
                 </div>
 
                 <div class="formulario__forms__pergunta">
@@ -51,17 +66,17 @@
 
                 <div class="formulario__forms__pergunta">
                     <h2 class="formulario__forms__pergunta__titulo">05) Quais os principais desafios que você tem nesse momento:</h2>
-                    <div class="formulario__forms__pergunta__checkboxs">
-                        <div class="formulario__forms__pergunta__checkboxs__opcao">
-                            <input type="checkbox"  name="pergunta3a" id="pergunta3a" placeholder="pergunta3a" class="formulario__forms__pergunta__checkboxs__opcao__checkbox"> <label for="pergunta3a" class="formulario__forms__pergunta__checkboxs__opcao__label">pergunta 3 a</label>
+                    <div class="formulario__forms__pergunta__container-checkbox">
+                        <div class="formulario__forms__pergunta__container-checkbox__opcao">
+                            <input type="checkbox"  name="pergunta3a" id="pergunta3a" placeholder="pergunta3a" class="formulario__forms__pergunta__container-checkbox__opcao__checkbox"> <label for="pergunta3a" class="formulario__forms__pergunta__container-checkbox__opcao__label">pergunta 3 a</label>
                         </div>
                         
-                        <div class="formulario__forms__pergunta__checkboxs__opcao">
-                            <input type="checkbox"  name="pergunta3b" id="pergunta3b" placeholder="pergunta3b" class="formulario__forms__pergunta__checkboxs__opcao__checkbox"> <label for="pergunta3b" class="formulario__forms__pergunta__checkboxs__opcao__label">pergunta 3 b</label>
+                        <div class="formulario__forms__pergunta__container-checkbox__opcao">
+                            <input type="checkbox"  name="pergunta3b" id="pergunta3b" placeholder="pergunta3b" class="formulario__forms__pergunta__container-checkbox__opcao__checkbox"> <label for="pergunta3b" class="formulario__forms__pergunta__container-checkbox__opcao__label">pergunta 3 b</label>
                         </div>
                         
-                        <div class="formulario__forms__pergunta__checkboxs__opcao">
-                            <input type="checkbox"  name="pergunta3c" id="pergunta3c" placeholder="pergunta3c" class="formulario__forms__pergunta__checkboxs__opcao__checkbox"> <label for="pergunta3c" class="formulario__forms__pergunta__checkboxs__opcao__label">pergunta 3 c</label>
+                        <div class="formulario__forms__pergunta__container-checkbox__opcao">
+                            <input type="checkbox"  name="pergunta3c" id="pergunta3c" placeholder="pergunta3c" class="formulario__forms__pergunta__container-checkbox__opcao__checkbox"> <label for="pergunta3c" class="formulario__forms__pergunta__container-checkbox__opcao__label">pergunta 3 c</label>
                         </div>
                     </div>
                     <input type="text"      name="pergunta3c" placeholder="Outro" class="formulario__forms__pergunta__input">
@@ -78,7 +93,7 @@
                 </div>
                 
                 <div class="formulario__forms__pergunta">
-                    <h2 class="formulario__forms__pergunta__titulo">08) Ajudaria se você pudesse ter clientes, não só de 1a compra, mas clientes de compras
+                    <h2 class="formulario__forms__pergunta__titulo">08) Ajudaria se você pudesse ter clientes, não só de uma compra, mas clientes de compras
                         recorrentes?</h2>
                     <input type="text" name="pergunta1" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
                 </div>
@@ -102,6 +117,8 @@
                     <h2 class="formulario__forms__pergunta__titulo">12) Qual a verba mensal destinada para anúncios?</h2>
                     <input type="text" name="pergunta1" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
                 </div>
+
+                <button type="submit" class="formulario__forms__botao">Enviar</button>
             </form>
         </div>
     </body>

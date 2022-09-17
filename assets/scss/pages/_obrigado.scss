@@ -1,0 +1,42 @@
+.obrigado {
+    @include flex-container;
+
+    height: 100%;
+    width: 100%;
+
+    &__container {
+        @include flex-container(column, space-between, center);
+        background-color: var(--cor-principal);
+
+        padding: 100px;
+
+        height: 100vh;
+        width: 100%;
+        
+        &__container-icone {
+            height: 100px;
+            width:  100px;
+
+            position: relative;
+
+            & > * {
+                @include centralizar;
+            }
+
+            &__circulo {
+                border: 1px solid var(--cor-secundaria);
+                border-radius: 999px;
+
+                height: 100%;
+                width:  100%;
+            }
+            
+            &__icone {
+                fill: var(--cor-secundaria);
+
+                height: 50%;
+                width:  50%;
+            }
+        }
+    }
+}

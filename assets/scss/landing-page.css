@@ -468,6 +468,16 @@ h2 {
   text-align: center;
 }
 
+.icon {
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  stroke-width: 0;
+  color: var(--color-secondary);
+  stroke: currentColor;
+  fill: var(--color-secondary);
+}
+
 .landing-page {
   background-color: var(--cor-fundo);
   max-width: 1920px;

@@ -466,4 +466,14 @@ h2 {
   font-size: 4.5rem;
   margin-bottom: var(--distancia-vertical);
   text-align: center;
+}
+
+.icon {
+  display: inline-block;
+  height: 2rem;
+  width: 2rem;
+  stroke-width: 0;
+  color: var(--color-secondary);
+  stroke: currentColor;
+  fill: var(--color-secondary);
 }/*# sourceMappingURL=main.css.map */
