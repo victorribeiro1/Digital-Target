@@ -677,10 +677,12 @@ h2 {
   border: none;
   border-bottom: 1px solid var(--cor-terciaria);
   width: 100%;
+  color: var(--cor-fundo);
   font-size: 2rem;
   outline: none;
   padding-left: 0;
   padding-bottom: 5px;
+  transition: var(--transition-1);
 }
 .header__conteudo__informacoes__formulario__inputs__input:not(:last-of-type) {
   margin-bottom: 10px;
@@ -699,6 +701,9 @@ h2 {
   transition: background-color 5000s ease-in-out 0s;
   font-family: "Lato Light";
   -webkit-text-fill-color: #fff !important;
+}
+.header__conteudo__informacoes__formulario__inputs__input.erro {
+  border-bottom: 1px solid red;
 }
 .header__conteudo__informacoes__formulario__botao {
   display: flex;
