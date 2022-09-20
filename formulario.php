@@ -68,32 +68,32 @@
 
                 <div class="formulario__forms__pergunta">
                     <h2 class="formulario__forms__pergunta__titulo">02) Que tipo de negócio é o seu? (negócio local, e-commerce, vende produtos ou serviços)</h2>
-                    <input type="text" name="pergunta2" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
+                    <input type="text" obrigatorio name="pergunta2" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
                 </div>
                 
                 <div class="formulario__forms__pergunta">
                     <h2 class="formulario__forms__pergunta__titulo">03) Quanto fatura mensalmente?</h2>
-                    <input type="text" name="pergunta3" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
+                    <input type="text" obrigatorio name="pergunta3" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
                 </div>
                 
                 <div class="formulario__forms__pergunta">
                     <h2 class="formulario__forms__pergunta__titulo">04) Qual ou quais objetivo(s) definiu para os próximos 12 meses?</h2>
-                    <input type="text" name="pergunta4" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
+                    <input type="text" obrigatorio name="pergunta4" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
                 </div>
 
-                <div class="formulario__forms__pergunta">
+                <div class="formulario__forms__pergunta" pergunta5>
                     <h2 class="formulario__forms__pergunta__titulo">05) Quais os principais desafios que você tem nesse momento:</h2>
                     <div class="formulario__forms__pergunta__container-checkbox">
                         <div class="formulario__forms__pergunta__container-checkbox__opcao">
-                            <input type="checkbox"  name="pergunta5a" id="pergunta3a" placeholder="pergunta3a" class="formulario__forms__pergunta__container-checkbox__opcao__checkbox"> <label for="pergunta3a" class="formulario__forms__pergunta__container-checkbox__opcao__label">pergunta 3 a</label>
+                            <input type="checkbox" class="formulario__forms__pergunta__container-checkbox__opcao__checkbox"> <label for="pergunta3a" class="formulario__forms__pergunta__container-checkbox__opcao__label">Precisa gerar mais leads</label>
                         </div>
                         
                         <div class="formulario__forms__pergunta__container-checkbox__opcao">
-                            <input type="checkbox"  name="pergunta5b" id="pergunta3b" placeholder="pergunta3b" class="formulario__forms__pergunta__container-checkbox__opcao__checkbox"> <label for="pergunta3b" class="formulario__forms__pergunta__container-checkbox__opcao__label">pergunta 3 b</label>
+                            <input type="checkbox" class="formulario__forms__pergunta__container-checkbox__opcao__checkbox"> <label for="pergunta3b" class="formulario__forms__pergunta__container-checkbox__opcao__label">Precisa de mais vendas</label>
                         </div>
                         
                         <div class="formulario__forms__pergunta__container-checkbox__opcao">
-                            <input type="checkbox"  name="pergunta5c" id="pergunta3c" placeholder="pergunta3c" class="formulario__forms__pergunta__container-checkbox__opcao__checkbox"> <label for="pergunta3c" class="formulario__forms__pergunta__container-checkbox__opcao__label">pergunta 3 c</label>
+                            <input type="checkbox" class="formulario__forms__pergunta__container-checkbox__opcao__checkbox"> <label for="pergunta3c" class="formulario__forms__pergunta__container-checkbox__opcao__label">Precisa levar a marca mais a frente</label>
                         </div>
                     </div>
                     <input type="text"      name="pergunta5d" placeholder="Outro" class="formulario__forms__pergunta__input">
@@ -101,43 +101,49 @@
 
                 <div class="formulario__forms__pergunta">
                     <h2 class="formulario__forms__pergunta__titulo">06) É importante resolver o desafio apontando na pergunta anterior para a sua empresa?</h2>
-                    <input type="text" name="pergunta6" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
+                    <input type="text" obrigatorio name="pergunta6" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
                 </div>
                 
                 <div class="formulario__forms__pergunta">
                     <h2 class="formulario__forms__pergunta__titulo">07) Quais os benefícios você vê para o seu negócio no uso das estratégias digitais e anúncios patrocinados?</h2>
-                    <input type="text" name="pergunta7" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
+                    <input type="text" obrigatorio name="pergunta7" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
                 </div>
                 
                 <div class="formulario__forms__pergunta">
                     <h2 class="formulario__forms__pergunta__titulo">08) Ajudaria se você pudesse ter clientes, não só de uma compra, mas clientes de compras
                         recorrentes?</h2>
-                    <input type="text" name="pergunta8" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
+                    <input type="text" obrigatorio name="pergunta8" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
                 </div>
                 
                 <div class="formulario__forms__pergunta">
                     <h2 class="formulario__forms__pergunta__titulo">09) Qual o grau de importância em ter relatórios quinzenais ou mensais dos resultados obtidos com as estratégias e anúncios digitais, para auxiliar na tomada de decisão do seu negócio?</h2>
-                    <input type="text" name="pergunta9" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
+                    <input type="text" obrigatorio name="pergunta9" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
                 </div>
                 
                 <div class="formulario__forms__pergunta">
                     <h2 class="formulario__forms__pergunta__titulo">10) Estar mais bem avaliado pelos clientes, quando comparado aos concorrentes, é importante para o seu negócio?</h2>
-                    <input type="text" name="pergunta10" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
+                    <input type="text" obrigatorio name="pergunta10" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
                 </div>
                 
                 <div class="formulario__forms__pergunta">
                     <h2 class="formulario__forms__pergunta__titulo">11) Faz sentido para você ter uma empresa e profissionais que trabalham em parceria e com proximidade ao seu negócio?</h2>
-                    <input type="text" name="pergunta11" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
+                    <input type="text" obrigatorio name="pergunta11" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
                 </div>
                 
                 <div class="formulario__forms__pergunta">
                     <h2 class="formulario__forms__pergunta__titulo">12) Qual a verba mensal destinada para anúncios?</h2>
-                    <input type="text" name="pergunta12" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
+                    <input type="text" obrigatorio name="pergunta12" placeholder="Insira sua resposta aqui" class="formulario__forms__pergunta__input">
                 </div>
+
+                <input type="hidden" name="pergunta5a" />
+                <input type="hidden" name="pergunta5b" />
+                <input type="hidden" name="pergunta5c" />
 
                 <!-- <button type="submit" name="enviar" class="formulario__forms__botao">Enviar</button> -->
                 <input type="submit" name="enviar" value="Enviar" class="formulario__forms__botao">
             </form>
         </div>
+
+        <script src="assets/js/validacaoForm3.js"></script>
     </body>
 </html>

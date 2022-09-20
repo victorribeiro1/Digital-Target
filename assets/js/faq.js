@@ -5,11 +5,14 @@ let alturaResposta;
 
 faqs.forEach(faq => {
     alturaPergunta = faq.firstElementChild.clientHeight + 20
-    alturaResposta = faq.lastElementChild.clientHeight + 20
     
     faq.style.height = alturaPergunta + 'px'
     
     faq.addEventListener('click', () => {
+        alturaResposta = faq.lastElementChild.clientHeight + 20
+
+        console.log('alturaResposta')
+        
         faq.classList.toggle('ativo')
         
         if (faq.classList.contains('ativo')) {
@@ -23,11 +26,12 @@ faqs.forEach(faq => {
 window.addEventListener('resize', () => {
     faqs.forEach(faq => {
         alturaPergunta = faq.firstElementChild.clientHeight + 20
-        alturaResposta = faq.lastElementChild.clientHeight + 20
         
         faq.style.height = alturaPergunta + 'px'
         
         faq.addEventListener('click', () => {
+            alturaResposta = faq.lastElementChild.clientHeight + 20
+            console.log('alturaResposta')
             faq.classList.toggle('ativo')
             
             console.log(alturaResposta)

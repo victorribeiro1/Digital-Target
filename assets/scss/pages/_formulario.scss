@@ -7,6 +7,22 @@
 
     max-width: 1920px;
 
+    [pergunta5] {
+        transition: var(--transition-1);
+
+        &.erro {
+            background-color: red;
+        }
+    }
+
+    input {
+        transition: var(--transition-1);
+
+        &.erro {
+            border-bottom: 1px solid red;
+        }
+    }
+
     & > * {
         width: 65%;
 

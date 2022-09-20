@@ -94,6 +94,12 @@
     
                     height: 3rem;
                     width: 100%;    
+
+                    transition: var(--transition-1);
+
+                    &.erro {
+                        background-color: red;
+                    }
     
                     &::placeholder {
                         color: var(--cor-fundo);

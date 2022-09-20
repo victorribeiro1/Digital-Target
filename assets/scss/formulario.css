@@ -488,6 +488,18 @@ h2 {
   color: var(--cor-fundo);
   max-width: 1920px;
 }
+.formulario [pergunta5] {
+  transition: var(--transition-1);
+}
+.formulario [pergunta5].erro {
+  background-color: red;
+}
+.formulario input {
+  transition: var(--transition-1);
+}
+.formulario input.erro {
+  border-bottom: 1px solid red;
+}
 .formulario > * {
   width: 65%;
   transition: var(--transition-1);

@@ -54,7 +54,20 @@
                 E-mail: ". $_POST['email']. "<br />
                 Número: ". $_POST['numero']. "<br /><br />
                 01): ". $_POST['pergunta1']. "<br />
-                02): ". $_POST['pergunta2']. "<br />";
+                02): ". $_POST['pergunta2']. "<br />
+                03): ". $_POST['pergunta3']. "<br />
+                04): ". $_POST['pergunta4']. "<br />
+                05-A): ".$_POST['pergunta5a']. "<br />
+                05-B): ".$_POST['pergunta5b']. "<br />
+                05-C): ".$_POST['pergunta5c']. "<br />
+                05-D): ".$_POST['pergunta5d']. "<br />
+                06): ". $_POST['pergunta6']. "<br />
+                07): ". $_POST['pergunta7']. "<br />
+                08): ". $_POST['pergunta8']. "<br />
+                09): ". $_POST['pergunta9']. "<br />
+                10): ". $_POST['pergunta10']. "<br />
+                11): ". $_POST['pergunta11']. "<br />
+                12): ". $_POST['pergunta12']. "<br />";
 
                 $mail->Body = $body;
 
@@ -111,7 +124,7 @@
                 </div>';
 
                 } catch (Exception $e) {
-                    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+                    // echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
                 }
 
             } else {
