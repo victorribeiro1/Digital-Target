@@ -1,4 +1,4 @@
-const palavras = ['Mais reconhecimento da marca', 'Mais tráfego', 'Mais clientes', 'Mais resultados']
+const palavras = ['Mais reconhecimento de marca', 'Mais tráfego', 'Mais clientes', 'Mais resultados']
 
 let contadorPalavra = 0
 let contadorLetra = 0
