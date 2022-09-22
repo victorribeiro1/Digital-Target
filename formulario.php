@@ -142,8 +142,9 @@
                 <!-- <button type="submit" name="enviar" class="formulario__forms__botao">Enviar</button> -->
                 <input type="submit" name="enviar" value="Enviar" class="formulario__forms__botao">
             </form>
-        </div>
 
+            <footer class="formulario__footer">suporte@digitaltarget.com.br</footer>
+        </div>
         <script src="assets/js/validacaoForm3.js"></script>
     </body>
 </html>

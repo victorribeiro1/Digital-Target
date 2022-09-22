@@ -247,4 +247,17 @@
             color: var(--cor-principal);
         }
     }
+
+    &__footer {
+        @include flex-container;
+
+        background-color: var(--cor-principal);
+
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+
+        font-size: 1.5rem;
+
+        height: 75px;
+    }
 }

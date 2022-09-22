@@ -1,6 +1,8 @@
-const form = document.querySelector('form')
-const inputs = document.querySelectorAll('input')
-const botao = document.querySelector('input[type="submit"]')
+const form = document.querySelector('header form')
+const inputs = document.querySelectorAll('header input')
+const botao = document.querySelector('header input[type="submit"]')
+
+console.log(form)
 
 function cancelarEvento() {
     botao.addEventListener('click', (evt) => {
@@ -114,7 +116,6 @@ botao.addEventListener('click', evento => {
     limparErros()
     emailTemDominio()
     numeroTem13Digitos()
-    saoTodosNumeros()
     saoTodosNumeros()
 
     if (camposEstaoPreenchidos() && emailTemDominio() && numeroTem13Digitos() && saoTodosNumeros()) {

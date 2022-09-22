@@ -112,6 +112,16 @@
 
             &__informacao {
                 color: var(--cor-fundo);
+
+                & > #informacao {
+
+                }
+
+                & > #blink {
+                    animation: blink .6s infinite ease;
+                    position: relative;
+                    left: -5px;
+                }
             }
         }
 
@@ -181,8 +191,10 @@
                 }
 
                 &__titulo {
-                    font-size: 9rem;
+                    font-size: 6rem;
                     line-height: 0.9;
+
+                    font-family: "Lato Bold";
 
                     margin-bottom: 20px;
 
@@ -327,15 +339,15 @@
 
                     &__titulo {
                         @media only screen and (max-width: 730px) {
-                            font-size: 7rem;
-                        }
-
-                        @media only screen and (max-width: 600px) {
                             font-size: 6rem;
                         }
+
+                        @media only screen and (max-width: 690px) {
+                            font-size: 5rem;
+                        }
                        
-                        @media only screen and (max-width: 550px) {
-                            font-size: 5.5rem;
+                        @media only screen and (max-width: 650px) {
+                            font-size: 4rem;
                         }
 
                     }

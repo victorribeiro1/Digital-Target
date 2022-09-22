@@ -2,19 +2,17 @@ const form2 = document.querySelector('#formulario form')
 const inputs2 = document.querySelectorAll('#formulario input')
 const botao2 = document.querySelector('button[type="submit"]')
 
-console.log(inputs2)
-
-function cancelarEvento() {
+function cancelarEvento2() {
     botao2.addEventListener('click', (evt) => {
         evt.preventDefault()
     })
 }
 
-function enviarFormulario() {
+function enviarFormulario2() {
     form2.submit()
 }
 
-function camposEstaoPreenchidos() {
+function camposEstaoPreenchidos2() {
     let estaoPreenchidos = true
 
     if (inputs2[0].value == '') {
@@ -36,14 +34,14 @@ function camposEstaoPreenchidos() {
     return estaoPreenchidos
 }
 
-function limparErros() {
+function limparErros2() {
     const erros = document.querySelectorAll('.erro')
     erros.forEach(erro => {
         erro.classList.remove('erro')
     })
 }
 
-function emailTemDominio() {
+function emailTemDominio2() {
     let temDominio = true
 
     if (inputs2[1].value.split('@gmail.com').length != 2 && inputs2[1].value.split('@hotmail.com').length != 2 && inputs2[1].value.split('@hostgator.com').length != 2 && inputs2[1].value.split('@yahoo.com').length != 2) {
@@ -55,7 +53,7 @@ function emailTemDominio() {
     return temDominio
 }
 
-function numeroTem13Digitos() {
+function numeroTem13Digitos2() {
     let tem13Digitos = true
     if (inputs2[2].value.length < 13 || inputs2[2].value.length > 13) {
         inputs2[2].classList.add('erro')
@@ -66,8 +64,8 @@ function numeroTem13Digitos() {
     return tem13Digitos
 }
 
-function saoTodosNumeros() {
-    let saoTodosNumeros = true
+function saoTodosNumeros2() {
+    let saoTodosNumeros2 = true
 
     let numero = inputs2[2].value.split('-').join('')
     numero = +numero
@@ -75,13 +73,13 @@ function saoTodosNumeros() {
     if (isNaN(numero)) {
         inputs2[2].classList.add('erro')
 
-        saoTodosNumeros = false
+        saoTodosNumeros2 = false
     }
 
-    return saoTodosNumeros
+    return saoTodosNumeros2
 }
 
-function formatar() {
+function formatar2() {
     let numero = inputs2[2].value
 
     if (numero.length < 11) {
@@ -109,19 +107,18 @@ function formatar() {
 }
 
 inputs2[2].addEventListener('keyup', () => {
-    formatar()
+    formatar2()
 })
 
 botao2.addEventListener('click', evento => {
-    limparErros()
-    emailTemDominio()
-    numeroTem13Digitos()
-    saoTodosNumeros()
-    saoTodosNumeros()
+    limparErros2()
+    emailTemDominio2()
+    numeroTem13Digitos2()
+    saoTodosNumeros2()
 
-    if (camposEstaoPreenchidos() && emailTemDominio() && numeroTem13Digitos() && saoTodosNumeros()) {
-        enviarFormulario()
+    if (camposEstaoPreenchidos2() && emailTemDominio2() && numeroTem13Digitos2() && saoTodosNumeros2()) {
+        enviarFormulario2()
     }
 })
 
-cancelarEvento()
+cancelarEvento2()
