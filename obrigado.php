@@ -32,14 +32,14 @@
 
         try {
             //Server settings
-                $mail->isSMTP();                                            //Send using SMTP
+                $mail->isSMTP();                                                //Send using SMTP
                 $mail->CharSet = 'UTF-8';
-                $mail->Host       = 'smtp.gmail.com';                     //Set the SMTP server to send through
-                $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-                $mail->Username   = 'ads@digitaltarget.com.br';                     //SMTP username
-                $mail->Password   = 'iqqgnxfixvguacnw';                               //SMTP password
-                $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
-                $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+                $mail->Host       = 'smtp.gmail.com';                           //Set the SMTP server to send through
+                $mail->SMTPAuth   = true;                                       //Enable SMTP authentication
+                $mail->Username   = 'ads@digitaltarget.com.br';                 //SMTP username
+                $mail->Password   = 'iqqgnxfixvguacnw';                         //SMTP password
+                $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;             //Enable implicit TLS encryption
+                $mail->Port       = 587;                                        //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
                 //Recipients
                 $mail->setFrom('ads@digitaltarget.com.br', $_POST['nome']);
