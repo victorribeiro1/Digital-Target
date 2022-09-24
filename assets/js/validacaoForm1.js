@@ -2,8 +2,6 @@ const form = document.querySelector('header form')
 const inputs = document.querySelectorAll('header input')
 const botao = document.querySelector('header input[type="submit"]')
 
-console.log(form)
-
 function cancelarEvento() {
     botao.addEventListener('click', (evt) => {
         evt.preventDefault()
