@@ -10,16 +10,6 @@
     </head>
     <body>
 
-    <?php
-        if (($_SERVER['REQUEST_METHOD'] !== 'POST')) {
-            echo '
-                // <script>
-                //     window.location.href = "http://consultoria.digitaltarget.com.br";
-                // </script>    
-            ';
-        }
-    ?>
-
         <div class="formulario">
             <header class="formulario__header">
                 <div class="formulario__header__texto">
@@ -38,13 +28,6 @@
             </header>
 
             <form id="formulario" action="obrigado.php" method="post" class="formulario__forms">
-                <?php
-                echo '
-                    <input type="hidden" name="nome" value='.$_POST["nome"].'>    
-                    <input type="hidden" name="email" value='.$_POST["email"].'>    
-                    <input type="hidden" name="numero" value='.$_POST["numero"].'>
-                ';
-                ?>
                 <div class="formulario__forms__pergunta">
                     <h2 class="formulario__forms__pergunta__titulo">01) De 1 a 10, onde 1 significa muito pouco e 10 significa muito. Qual o nível de comprometimento que você tem em melhorar os resultados do seu negócio?</h2>
 
